@@ -1,0 +1,53 @@
+/* src/Hireform.css */
+/* .hire-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+} */
+
+form {
+    /* background: rgb(239, 0, 0); */
+    padding: 20px;
+    /*
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 8px;
+    border: 1px solid black; */
+   
+    width: 320px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.hire-form-button {
+    width: 40% !important;
+    padding: 10px;
+    background-color: #ed2d16;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 12px;
+}
+
+.hire-form-button:hover {
+    background-color: #c0392b;
+}

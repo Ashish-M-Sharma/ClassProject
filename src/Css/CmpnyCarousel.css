@@ -1,0 +1,111 @@
+.carousel-container {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.carousel-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black; /* Ensures text is visible */
+  margin-bottom: 10px;
+}
+
+.highlighted {
+  color: red;
+  display: inline; /* Prevents block-level styling issues */
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.carousel-row {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Continuous Scrolling Effect */
+.carousel-track {
+  display: flex;
+  width: max-content; /* Allows infinite looping */
+}
+
+/* Duplicating the content for seamless animation */
+.carousel-track::after {
+  content: attr(data-content);
+  display: flex;
+}
+
+/* First Row → Moves Right */
+.scroll-right .carousel-track {
+  animation: scroll-right 15s linear infinite;
+}
+
+/* Second Row ← Moves Left */
+.scroll-left .carousel-track {
+  animation: scroll-left 18s linear infinite;
+}
+
+/* Third Row → Moves Right */
+.scroll-right:nth-child(3) .carousel-track {
+  animation: scroll-right 20s linear infinite;
+}
+
+/* Keyframes for Infinite Scroll */
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Styling for Each Logo */
+.carousel-item {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 2px solid red;
+  background-color: white;
+}
+
+.carousel-item img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 18px;
+  }
+
+  .carousel-item img {
+    height: 30px;
+  }
+
+  .carousel-item {
+    padding: 5px 10px;
+  }
+}

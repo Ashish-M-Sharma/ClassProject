@@ -1,0 +1,79 @@
+.hero-section {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.hero-rating {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.info-box {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #ffe5e5;
+}
+
+.button-col {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hero-button {
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.specialities-section {
+    margin-top: 2rem;
+}
+
+.speciality-box {
+    background-color: #e5e5e5;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 22%;
+}
+
+
+.bg-brand {
+    background-color: #000000;
+}
+
+/* ProgramCredentials.css */
+
+.cred-img-container {
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    /* Adjust this to fit your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cred-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the entire div without distorting */
+    object-position: center;
+}

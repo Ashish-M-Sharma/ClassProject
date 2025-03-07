@@ -1,0 +1,35 @@
+/* Custom styles for the RelatedCourses component */
+.course-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-card .card-body {
+    padding: 2rem;
+  }
+  
+  .course-card .card-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .course-card .card-text {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+  }
+  
+  h3.text-primary {
+    font-family: 'Helvetica', sans-serif;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  

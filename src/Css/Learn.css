@@ -1,0 +1,30 @@
+.learn-card {
+    background-color: pink;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    /* Add padding for better spacing */
+    /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: add shadow for better visuals */
+    overflow: hidden;
+    /* Ensure content stays within the card */
+}
+
+.learn-card-header h1,
+.learn-card-header p {
+    text-align: center;
+}
+
+.learn-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.learn-card-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

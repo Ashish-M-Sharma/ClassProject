@@ -1,0 +1,182 @@
+.running-text {
+  color: #000000;
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.running-text:hover {
+  cursor: pointer;
+}
+
+.main-banner {
+  width: 100%; /* Ensure the marquee takes full width */
+  overflow: hidden; /* Prevent content from overflowing */
+  white-space: nowrap; /* Prevent text wrapping */
+  background-color: #fff;
+  border-bottom: 0.5px solid rgba(165, 150, 150, 0.575);
+  height: 45px;
+  overflow-y: hidden;
+  z-index: 5;
+  margin-top: 80px; /* ✅ Added to prevent it from being hidden under navbar */
+}
+
+/* Button resets and style */
+button {
+  margin: 10px auto;
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px;
+  border: 0px solid #000;
+}
+
+/* Initiate Auto-Pulse animations */
+button.pulse-button {
+  animation: borderPulse 1000ms infinite ease-out,
+    colorShift 10000ms infinite ease-in;
+  padding: 6px 15px !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  background-color: #bb1502;
+}
+
+/* Initiate color change for pulse-on-hover */
+/* button.pulse-button-hover {
+  animation: colorShift 10000ms infinite ease-in;
+} */
+
+/* Continue animation and add shine on hover */
+/* button:hover,
+button:focus {
+  animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in, hoverShine 200ms;
+} */
+
+/* Declate color shifting animation */
+@keyframes colorShift {
+  0%,
+  100% {
+    background: #e5560f;
+  }
+
+  33% {
+    background: #000000;
+  }
+
+  66% {
+    background: #ce1d09;
+  }
+}
+
+/* Declare border pulse animation */
+@keyframes borderPulse {
+  0% {
+    box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0.4),
+      0px 0px 0px 0px rgba(255, 255, 255, 1);
+  }
+
+  100% {
+    box-shadow: inset 0px 0px 0px 2px rgba(117, 117, 255, 0.2),
+      0px 0px 0px 10px rgba(255, 255, 255, 0);
+  }
+}
+
+/* Declare shine on hover animation */
+@keyframes hoverShine {
+  0% {
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  50% {
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  100% {
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+  }
+}
+
+/* New css */
+
+/* RunningBanner.css */
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+  min-width: 300%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clock-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Tablet and smaller */
+  .marquee-content {
+    animation: marquee 15s linear infinite; /* Adjust speed for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile and smaller */
+  .marquee-content {
+    animation: marquee 10s linear infinite; /* Even faster for mobile */
+    gap: 1.5rem; /* reduce gap between elements on small screens*/
+  }
+}
+
+/* RunningBanner.css */
+
+.main-banner {
+  width: 100%; /* Ensure the marquee takes full width */
+  overflow: hidden; /* Prevent content from overflowing */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.running-text {
+  display: inline-flex; /* Use flexbox for better control */
+  align-items: center; /* Align items vertically */
+  gap: 1rem; /* Add spacing between elements */
+  padding: 0 1rem; /* Add padding if needed */
+}
+
+.clock-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.pulse-button {
+  /* Your pulse button styles */
+}

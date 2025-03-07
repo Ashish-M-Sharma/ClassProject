@@ -1,0 +1,20 @@
+body {
+  background-image: url("../../src/almabetter resoures/careerbg.jpg");
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center;
+  background-attachment: fixed; /* Keeps it fixed while scrolling */
+  background-repeat: no-repeat;
+}
+.input-highlight {
+  border: 2px solid #ff4500 !important; /* Orange Border */
+  border-radius: 8px; /* Soft Rounded Edges */
+  background-color: #fff5f5; /* Light Red Background */
+  transition: all 0.3s ease-in-out;
+}
+
+.input-highlight:focus {
+  border-color: #dc3545 !important; /* Red Border on Focus */
+  box-shadow: 0px 0px 10px rgba(220, 53, 69, 0.6); /* Glowing Effect */
+  background-color: #ffeaea; /* Lighter Background on Focus */
+  outline: none;
+}

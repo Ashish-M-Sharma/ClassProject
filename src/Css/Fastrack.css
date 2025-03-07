@@ -1,0 +1,45 @@
+.fasttrack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffd3d4;
+}
+
+.fasttrack-text {
+    margin-bottom: 20px;
+}
+
+.fasttrack-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Optional: add rounded corners to the image */
+}
+
+@media (min-width: 768px) {
+    .fasttrack-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .fasttrack-text {
+        flex: 1;
+        margin-bottom: 0;
+        padding-right: 20px;
+    }
+
+    .fasttrack-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fasttrack-image img {
+        max-width: 80%;
+        /* Adjust as needed */
+    }
+}

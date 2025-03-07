@@ -1,0 +1,99 @@
+.footer-container {
+  width: 100%;
+  min-height: 50vh;
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-heading {
+  margin: 10px 0;
+  font-size: 18px;
+  color: grey;
+}
+
+.footer-logo {
+  width: 250px;
+  margin-right: 25px;
+}
+
+.margin {
+  margin: 20px 0;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.footer-main {
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.footer-company p {
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom-content {
+  margin-right: 70px;
+}
+
+.footer-icon {
+  margin: 12px;
+  display: inline-block;
+}
+
+@keyframes buzz {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-2px);
+  }
+
+  40% {
+    transform: translateX(2px);
+  }
+
+  60% {
+    transform: translateX(-1px);
+  }
+
+  80% {
+    transform: translateX(1px);
+  }
+}
+
+.footer-icon:hover {
+  /* background-color: #ed2d16; */
+  animation: buzz 0.3s linear;
+}
+
+.footer-icon:hover svg {
+  fill: #ed2d16;
+  animation: buzz 0.3s linear;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+  .footer-right,
+  .footer-main {
+    flex-direction: column;
+  }
+}

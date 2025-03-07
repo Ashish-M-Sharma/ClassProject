@@ -1,0 +1,5 @@
+.card-body{
+
+    display: flex !important;
+    flex-direction: column !important;
+}

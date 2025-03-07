@@ -1,0 +1,425 @@
+/* General styles */
+/* body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+} */
+
+/* Base styles */
+.placement-container {
+  /* margin-top: 120px; */
+  padding: 20px;
+  text-align: left;
+}
+
+.placement-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ed2d16;
+  /* Adjust color as needed */
+}
+
+.placement-description {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.placement-button {
+  background-color: #ed2d16;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  /* Make button full-width */
+  border-radius: 5px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed2d16;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.text-center {
+  text-align: center;
+  /* Center align text on desktop */
+}
+
+.center-image {
+  display: block;
+  margin: 20px auto;
+  /* Center image on desktop */
+  max-width: 80%;
+  /* Adjust image width for better presentation */
+}
+
+.worldmap-text {
+  width: 50%;
+  line-height: 23px;
+}
+
+.worldmap-text div {
+  width: 75%;
+  margin: auto;
+}
+
+/* Media queries for mobile */
+@media (max-width: 767px) {
+  .placement-container {
+    text-align: left;
+    /* Left align text on mobile */
+  }
+
+  .center-image {
+    margin: 20px auto;
+    /* Center image on mobile */
+    max-width: 100%;
+  }
+}
+
+/* Media queries for desktop */
+@media (min-width: 768px) {
+  .placement-container {
+    text-align: center;
+    /* Center align text on desktop */
+  }
+
+  .placement-title {
+    font-size: 2em;
+  }
+
+  .placement-description {
+    font-size: 1.2em;
+  }
+
+  .placement-button {
+    width: auto;
+    /* Adjust button width */
+    display: inline-block;
+  }
+
+  .center-button {
+    width: auto;
+    /* Adjust button width */
+  }
+
+  .center-image {
+    margin: 20px auto;
+    /* Center image on desktop */
+    max-width: 80%;
+    /* Adjust image width for better presentation */
+  }
+}
+
+/* Additional styles */
+.highlight {
+  color: #fff;
+  /* background-color: #ed2d16; */
+  padding: 5px;
+}
+
+.outline-button {
+  background-color: #fff;
+  color: #ed2d16;
+  border: 1px solid #ed2d16;
+}
+
+.highlight-text {
+  color: #ed2d16;
+  font-weight: bold;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.impact-section {
+  background-image: url("../almabetter resoures/impact-bg.jpg");
+  padding: 20px;
+  box-sizing: border-box;
+
+  height: auto !important;
+  margin-bottom: 20px !important;
+}
+
+.impact-content {
+  padding: 10px;
+}
+
+.impact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impact-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.impact-graph {
+  max-width: 100%;
+}
+
+.worldmap-section {
+  background-image: url("../almabetter resoures/world-map.png");
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.worldmap-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.worldmap-button {
+  margin: 10px 5px;
+  background-color: #ed2d16;
+  padding: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.worldmap-graph {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.journey-cards {
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  align-items: center;
+  /* width: 100%; */
+}
+
+.journey-card {
+  background-color: #ed2d16;
+  width: 35%;
+  height: 130px;
+  text-align: center;
+  border-radius: 16px;
+  margin: 10px 0;
+  color: #fff;
+  padding: 10px;
+}
+
+.turnaround-section {
+  margin: 50px 0;
+}
+
+.turnaround-content {
+  background-color: #ffe4e4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.turnaround-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.turnaround-graph {
+  max-width: 100%;
+}
+
+.placement-assistance-buttons {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.placement-assistance-buttons button {
+  margin-left: 20px;
+}
+
+.stars-section {
+  background-color: #ffe4e4;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.trainer-image {
+  margin: auto;
+  /* margin-top: 20px; */
+  width: 100%;
+}
+
+/* .text-left {
+    text-align: left;
+    font-weight: bold;
+
+} */
+
+/* **** */
+
+/* Additional styles */
+.highlight {
+  color: var(--white);
+  /* background-color: var(--primary-red); */
+  background-color: #ed2d16;
+  padding: 5px;
+  line-height: 46px;
+}
+
+.highlight-text {
+  color: red;
+  font-weight: bold;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.impact-section {
+  text-align: center;
+  margin: auto;
+  background-image: url("../almabetter resoures/impact-bg.jpg");
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.impact-content {
+  padding: 10px;
+}
+
+.impact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.impact-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.impact-graph {
+  max-width: 100%;
+}
+
+/* Media queries for mobile */
+@media (max-width: 767px) {
+  .impact-section {
+    margin: 0;
+    width: 100%;
+  }
+
+  .impact-details {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .impact-text,
+  .impact-graph {
+    width: 100%;
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: left;
+  }
+
+  .impact-content h1 .highlight {
+    color: white;
+    font-weight: bold;
+    /* background-color:red; */
+    line-height: 50px;
+  }
+
+  .stars-text-content {
+    text-align: left !important;
+  }
+
+  .journey-cards {
+    flex-direction: column;
+  }
+
+  .journey-card {
+    width: 100%;
+    text-align: left;
+  }
+
+  .turnaround-content {
+    flex-direction: column;
+  }
+
+  .worldmap-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .worldmap-text {
+    width: 100%;
+    text-align: left;
+  }
+
+  .worldmap-text h1 {
+    color: red;
+  }
+
+  .worldmap-text p {
+    font-weight: bold;
+  }
+
+  .worldmap-text div {
+    width: 100%;
+    margin: auto;
+  }
+
+  .placement-assistance-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Media queries for desktop */
+@media (min-width: 768px) {
+  .impact-details {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .impact-text,
+  .impact-graph {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+/* 
+@media (min-width: 1200px) {
+    .stars-content .stars-section p{
+        text-align: center;
+    }
+} */

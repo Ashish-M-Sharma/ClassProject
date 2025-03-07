@@ -1,0 +1,200 @@
+.course-container {
+  padding: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.child {
+  color: red;
+  background-color: #fff;
+  padding: 15px 25px;
+  font-weight: 900;
+}
+
+.child:last-child {
+  border-radius: 20px 0;
+}
+
+.child2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.child2 h2 {
+  width: 45%;
+  color: #fff;
+  background-color: red;
+  padding: 15px 25px;
+  font-weight: 900;
+  border-radius: 20px 0;
+  text-align: center;
+}
+
+.course-container2 {
+  color: white;
+  padding: 50px;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.box {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 22%;
+}
+
+.box-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+/* Existing CSS (if any) */
+/* Existing CSS (if any) */
+/* Existing CSS (if any) */
+.img img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.img {
+  /* ... existing styles ... */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 5px; /* Reduced padding */
+  border-radius: 20px; /* Slightly reduced border radius */
+  width: 70px; /* Reduced size for larger screens */
+  height: 70px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* ... your existing tablet styles ... */
+
+  .img {
+    width: 24px; /* Reduced size for tablets */
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ... your existing mobile styles ... */
+
+  .img {
+    width: 60px; /* Reduced size for mobile */
+    height: 60px;
+  }
+}
+/* Existing CSS (if any) */
+
+/* Existing CSS (if any) */
+
+/* Responsive adjustments */
+/* Existing CSS (if any) */
+
+/* Responsive adjustments */
+/* Existing CSS (if any) */
+
+/* Responsive adjustments */
+/* Existing CSS (if any) */
+
+/* Responsive adjustments */
+/* Existing CSS (if any) */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .parent {
+    padding: 20px; /* Added padding to the sides */
+  }
+
+  .child:first-child {
+    /* Select the first child (FEATURED COURSES) */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .child:last-child {
+    /* Select the last child (ENROLL FOR COURSE) */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  .child {
+    font-size: 2em;
+  }
+
+  .child2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child2 h2 {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .parent {
+    padding: 30px 20px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .child {
+    font-size: 2.4em;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .child2 {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .child2 h2 {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

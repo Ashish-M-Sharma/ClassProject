@@ -1,0 +1,84 @@
+.hero-form-container {
+    padding: 25px;
+    margin: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 40px -22px rgba(99, 99, 99, 1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-form-container h2 {
+    margin-bottom: 10px;
+}
+
+.hero-form-container p {
+    margin-bottom: 20px;
+}
+
+.hero-form-container input[type="text"],
+.hero-form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.hero-form-container input[type="text"]::placeholder,
+.hero-form-container select::placeholder {
+    color: #aaa;
+}
+
+.hero-form-container input[type="text"]:focus,
+.hero-form-container select:focus {
+    outline: none;
+    border-color: #ed2b16;
+}
+
+.hero-hero-form-btn {
+    background-color: #ed2b16;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-hero-form-btn:hover {
+    background-color: #bb1502;
+    transition: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-form-container {
+        box-shadow: none;
+        margin-top: 20px;
+    }
+
+    .hero-form-container h2 {
+        font-size: 18px;
+        text-align: center;
+        /* Make heading smaller */
+    }
+
+    .hero-form-container p {
+        text-align: center;
+    }
+
+    .hero-form-container input[type="text"],
+    .hero-form-container select,
+    .hero-hero-form-btn {
+        width: 100%;
+        /* Make inputs and button take 85% width */
+    }
+
+    .hero-hero-form-btn {
+        padding: 10px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,180 @@
+.carousel-container {
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  border-top-left-radius: 80px; /* Add top-left border radius */
+  border-top-right-radius: 80px; /* Add top-right border radius */
+}
+
+/* ... rest of your existing CSS ... */
+
+.carousel-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black; /* Ensures text is visible */
+  margin-bottom: 10px;
+}
+
+.highlighted {
+  color: red;
+  display: inline; /* Prevents block-level styling issues */
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 40px; /* Adds space below the last row */
+}
+
+.carousel-row {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Continuous Scrolling Effect */
+.carousel-track {
+  display: flex;
+  width: max-content; /* Allows infinite looping */
+}
+
+/* Duplicating the content for seamless animation */
+.carousel-track::after {
+  content: attr(data-content);
+  display: flex;
+}
+
+/* First Row → Moves Right */
+.scroll-right .carousel-track {
+  animation: scroll-right 15s linear infinite;
+}
+
+/* Second Row ← Moves Left */
+.scroll-left .carousel-track {
+  animation: scroll-left 18s linear infinite;
+}
+
+/* Third Row → Moves Right */
+.scroll-right:nth-child(3) .carousel-track {
+  animation: scroll-right 20s linear infinite;
+}
+.our-hiring-partners-box {
+  background-color: red;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  width: fit-content; /* Make the box adjust to its content width */
+  margin-left: auto; /* Center the box horizontally */
+  margin-right: auto;
+}
+
+/* ... rest of your existing CSS ... */
+
+.our-hiring-partners-title {
+  /* Added styles for the title */
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0; /* Remove default margins */
+}
+
+.carousel-container {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.carousel-title {
+  display: none; /* Hide the original title */
+}
+
+/* ... rest of your existing CSS ... */
+/* Keyframes for Infinite Scroll */
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Styling for Each Logo */
+.carousel-item {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 2px solid red;
+  background-color: white;
+}
+
+.carousel-item img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ✅ Responsive Adjustments */
+/* ... your existing CSS ... */
+
+@media (max-width: 768px) {
+  .our-hiring-partners-box {
+    padding: 10px 15px; /* Reduce padding on tablets */
+    border-radius: 0 0 15px 15px; /* Smaller border radius */
+  }
+
+  .our-hiring-partners-title {
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .carousel-item {
+    margin: 3px; /* Reduce margin between items */
+    padding: 5px 8px; /* Reduce padding within items */
+    border-radius: 20px; /* Smaller border radius */
+  }
+
+  .carousel-item img {
+    height: 24px; /* Smaller image height */
+  }
+}
+
+@media (max-width: 480px) {
+  .our-hiring-partners-box {
+    padding: 8px 12px; /* Further reduce padding on mobiles */
+    border-radius: 0 0 10px 10px; /* Even smaller border radius */
+  }
+
+  .our-hiring-partners-title {
+    font-size: 16px; /* Even smaller font size */
+  }
+
+  .carousel-item {
+    margin: 2px; /* Further reduce margin */
+    padding: 3px 6px; /* Further reduce padding */
+    border-radius: 15px; /* Even smaller border radius */
+  }
+
+  .carousel-item img {
+    height: 18px; /* Even smaller image height */
+  }
+}

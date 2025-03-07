@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "employeeImg" : "../../almabetter resoures/Male.png",
+    "employeeName": "Pratik Sable",
+    "employeeRole": "Software Trainer",
+    "feedbackText":
+      "Speedup Infotech has provided me with a platform to make a meaningful impact as a MERN Stack trainer. Here, I've found an environment that fosters continuous learning and growth, allowing me to stay at the forefront of technological advancements. The collaborative culture encourages enriching both the teaching and learning experience. As a MERN Stack trainer, guiding and mentoring aspiring developers has been a gratifying journey that fuels my passion for education and technology."
+  },
+  {
+    "id": 2,
+    "employeeImg": "../../almabetter resoures/Female.png",
+    "employeeName": "Shi Waghmare",
+    "employeeRole": "Software Trainer",
+    "feedbackText":
+      "Joining Speedup Infotech as a Node.js trainer has been a rewarding journey, filled with opportunities for growth. Here, I've found a supportive community that values innovation and excellence in tech education. With access to exceptional resources and support, I've conducted dynamic training sessions, empowering students with the expertise needed to succeed in the ever-evolving tech landscape. It's been a privilege to shape the next generation of Node.js developers and witness their progress firsthand."
+  },
+  {
+    "id": 3,
+    "employeeImg": "../../almabetter resoures/Female.png",
+    "employeeName": "Pooja Lende",
+    "employeeRole": "Sr. Bussiness Development Executive",
+    "feedbackText":
+      "My journey as a Business DevelopmentExecutive at Speedup Infotech has been nothing short of transformative. From day one, I've been immersed in a culture that values growth and innovation. The leadership's guidance, coupled with challenging yet rewarding opportunities, has truly propelled my career forward. I'm grateful for the supportive environment and the chance to work alongside some of the brightest minds in the industry."
+  },
+  {
+    "id": 4,
+    "employeeImg":  "../../almabetter resoures/Female.png",
+    "employeeName": "Shilpi Singh",
+    "employeeRole": "HR Executive",
+    "feedbackText":
+      "In my role as an HR Executive at Speedup Infotech, I've had the privilege of contributing to a culture that prioritizes employee well-being and professional growth. Speedup Infotech's commitment to fostering a supportive and inclusive environment has made it an exceptional workplace. I'm proud to be part of a team that values its employees and invests in their success."
+  },
+  {
+    "id": 5,
+    "employeeImg": "../../almabetter resoures/Female.png",
+    "employeeName": "Gauri Kutwal",
+    "employeeRole": "Bussiness Development Executive",
+    "feedbackText":
+      "Joining Speedup Infotech as a Business Development Executive has been a pivotal moment in my career. From the outset, I've been impressed by the company's commitment to fostering talent and driving innovation.The dynamic nature of the work, combined with the supportive team environment, has far exceeded my expectations. Every day brings new challenges and opportunities for growth, and I'm excited to continue this journey of professional development."
+  },
+  {
+    "id": 6,
+    "employeeImg":  "../../almabetter resoures/Female.png",
+    "employeeName": "Yashashri Thorat",
+    "employeeRole": "Bussiness Development Executive",
+    "feedbackText":
+      "In my role as a Business Development Executive at Speedup Infotech, I've had the privilege of being part of a team that is at the forefront of technological innovation. The company's dedication to excellence is evident in every project we undertake, and I'm constantly inspired by the passion and expertise of my colleagues. Working here has not only expanded my skill set but also provided me with invaluableopportunities for personal and professional growth."
+  },
+  {
+    "id": 7,
+    "employeeImg":  "../../almabetter resoures/Female.png",
+    "employeeName": "Pooja Sawarkar",
+    "employeeRole": "Bussiness Development Executive",
+    "feedbackText":
+      "Joining Speedup Infotech as a Business Development Executive has been an incredible opportunity for me to grow both personally and professionally. The company's commitment to excellence and innovation is evident in everything we do, and I'm proud to be part of a team that is driving change in the tech industry. From collaborating with talented colleagues to working on impactful projects, every day presents new opportunities for growth and learning. I'm excited to see where this journey takes me and to continue making a positive impact at Speedup Infotech."
+  },
+  {
+    "id": 8,
+    "employeeImg":  "../../almabetter resoures/Female.png",
+    "employeeName": "Priyanka Mhade",
+    "employeeRole": "Bussiness Development Manager",
+    "feedbackText":
+      "My experience as a Business Development Maneger at Speedup Infotech has been nothing short of extraordinary. From the moment I joined, I was impressed by the company's commitment to fostering talent and providing opportunities for growth. The collaborative culture, coupled with the challenging yet rewarding nature of the work, has enabled me to thrive in my role and expand my skill set. I'm grateful for the support and mentorship I've received, and I'm excited to continue my journey with Speedup Infotech."
+  },
+  {
+    "id": 9,
+    "employeeImg":  "../../almabetter resoures/Female.png",
+    "employeeName": "Prajakta Kadam",
+    "employeeRole": "Accountant",
+    "feedbackText":
+      "Joining Speedup Infotech as an accountant has been a fantastic career move. The collaborative atmosphere and the focus on continuous improvement have allowed me to thrive in my role. I'm proud to be part of a company that values accuracy, transparency, and excellence in all financial operations. Speedup Infotech's dedication to using the latest financial tools and technologies ensures that I am always at"
+  }
+]

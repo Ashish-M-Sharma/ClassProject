@@ -1,0 +1,125 @@
+/* .main-contact-bg {
+    padding-top: 50px;
+} */
+/* .contact-bg {
+  background: url("../almabetter/resources/Bg.jpg") no-repeat center
+    center/cover !important;
+  position: relative;
+  border-radius: 16px;
+} */
+
+.contact-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black overlay */
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.contact-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-box {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 8px;
+}
+
+.contact-box:hover {
+  background-color: #ed2d16;
+  color: #fff;
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.contact-box .bi {
+  color: #ed2d16;
+}
+
+.contact-box:hover .bi {
+  color: #fff;
+}
+
+.contact-box h4 {
+  margin: 10px 0;
+}
+
+.contact-box p {
+  margin: 5px 0;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: none;
+  /* background-color: red; */
+  padding-right: 30px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  /* background-color: #fff; */
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.contact-form-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-btn {
+  padding: 15px;
+  background-color: #ed2d16;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto 0;
+  /* Ensures the button is centered horizontally */
+}
+
+.contact-form-btn:hover {
+  background-color: #d41b12;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+
+  .contact-box {
+    width: 75%;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+}

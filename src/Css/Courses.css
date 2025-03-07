@@ -1,0 +1,34 @@
+/* Full-page background applied to the whole site */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../../src/almabetter resoures/careerbg.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+}
+
+/* Course container with overlay to ensure readability */
+.course-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional overlay effect */
+}
+
+/* Ensure other sections blend in without separate background images */
+.course-section {
+  margin-top: 80px; /* Adjust according to your navbar height */
+  min-height: 100vh; /* Full viewport height */
+  padding: 50px;
+  color: white;
+}
+
+.divider {
+  width: 2px;
+  background-color: white;
+  height: 80%;
+}
